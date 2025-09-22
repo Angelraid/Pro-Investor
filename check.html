@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Pro Investor</title>
+
+		<link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/opencheck.css" />
+		<link rel="stylesheet" href="css/lk.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__link">
+					<a href="settings.html"
+						><img src="images/lk/setings.svg" alt="Настройки"
+					/></a>
+					<div class="header__profile">
+						<a href="profile.html"
+							><img src="images/lk/profile.svg" alt="Профиль"
+						/></a>
+						<div class="header__profile-name">
+							<h3>Денисова Анна</h3>
+							<p>Неквалифицированный инвестор</p>
+						</div>
+					</div>
+					<a href="index.html"><img src="images/lk/exit.svg" alt="Выход" /></a>
+				</div>
+			</div>
+		</header>
+
+		<div class="container-small">
+			<div class="sidebar">
+				<div class="sidebar__top">
+					<ul>
+						<li>
+							<a href="home.html">
+								<svg
+									width="21"
+									height="22"
+									viewBox="0 0 21 22"
+									fill="currentColor"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M21 10.5596V21.12C21 21.3534 20.9078 21.5772 20.7437 21.7422C20.5796 21.9073 20.3571 22 20.125 22H14C13.7679 22 13.5454 21.9073 13.3813 21.7422C13.2172 21.5772 13.125 21.3534 13.125 21.12V15.3998C13.125 15.2831 13.0789 15.1711 12.9969 15.0886C12.9148 15.0061 12.8035 14.9597 12.6875 14.9597H8.3125C8.19647 14.9597 8.08519 15.0061 8.00314 15.0886C7.92109 15.1711 7.875 15.2831 7.875 15.3998V21.12C7.875 21.3534 7.78281 21.5772 7.61872 21.7422C7.45462 21.9073 7.23206 22 7 22H0.875C0.642936 22 0.420376 21.9073 0.256282 21.7422C0.0921874 21.5772 0 21.3534 0 21.12V10.5596C0.000215129 10.0929 0.184731 9.64534 0.512969 9.31543L9.26297 0.515103C9.59112 0.185277 10.0361 0 10.5 0C10.9639 0 11.4089 0.185277 11.737 0.515103L20.487 9.31543C20.8153 9.64534 20.9998 10.0929 21 10.5596Z"
+									/>
+								</svg>
+								<h3>Главная</h3>
+							</a>
+						</li>
+						<li>
+							<a href="check.html">
+								<img src="images/lk/check.svg" alt="Счета" />
+								<h3>Счета</h3>
+							</a>
+						</li>
+						<li>
+							<a href="story.html">
+								<svg
+									width="22"
+									height="22"
+									viewBox="0 0 22 22"
+									fill="currentColor"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M11 0C9.55546 0 8.12506 0.284523 6.79048 0.837325C5.4559 1.39013 4.24327 2.20038 3.22183 3.22183C1.15893 5.28473 0 8.08262 0 11C0 13.9174 1.15893 16.7153 3.22183 18.7782C4.24327 19.7996 5.4559 20.6099 6.79048 21.1627C8.12506 21.7155 9.55546 22 11 22C13.9174 22 16.7153 20.8411 18.7782 18.7782C20.8411 16.7153 22 13.9174 22 11C22 9.55546 21.7155 8.12506 21.1627 6.79048C20.6099 5.4559 19.7996 4.24327 18.7782 3.22183C17.7567 2.20038 16.5441 1.39013 15.2095 0.837325C13.8749 0.284523 12.4445 0 11 0ZM15.62 15.62L9.9 12.1V5.5H11.55V11.22L16.5 14.19L15.62 15.62Z"
+									/>
+								</svg>
+								<h3>История</h3>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="sidebar__bottom">
+					<div class="sidebar__bottom-link">
+						<a href="balanse.html">
+							<img src="images/lk/balanse.png" alt="Пополнить баланс" />
+							<p>Пополнить баланс</p>
+						</a>
+						<a href="money.html">
+							<img src="images/lk/money.png" alt="Вывести деньги" />
+							<p>Вывести деньги</p>
+						</a>
+						<a href="trade.html">
+							<img src="images/lk/trade.png" alt="Обмен валюты" />
+							<p>Обмен валюты</p>
+						</a>
+						<a href="platform.html">
+							<img src="images/lk/platform.svg" alt="Торговые платформы" />
+							<p>Торговые платформы</p>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="content__all cont">
+				<section class="actions">
+					<h1 class="title2">Cчета</h1>
+					<div class="btn__check">
+						<button id="btn1">Торговые счета</button>
+						<button id="btn2">Демо-счета</button>
+						<button id="btn3">Банковские счета</button>
+					</div>
+					<div id="blo1" style="display: none" class="check__blok1">
+						<div id="check__img">
+							<a href="balanse.html"
+								><img src="images/lk/check1.png" alt="Пополнить баланс"
+							/></a>
+							<a href="check1.html"
+								><img src="images/lk/check2.png" alt="Открыть счет"
+							/></a>
+							<a href="trade.html"
+								><img src="images/lk/check3.png" alt="Обмен валюты"
+							/></a>
+							<a href="money.html"
+								><img src="images/lk/check4.png" alt="Вывести"
+							/></a>
+						</div>
+						<div class="actions__check">
+							<h5>Всего на торговых счетах</h5>
+							<h3>80,79 RUB</h3>
+							<div class="actions__check-card">
+								<div class="action__check-item">
+									<img src="images/lk/rub.png" alt="" />
+									<div class="action__check-info">
+										<h4>с хеджированием</h4>
+										<h5>80,79 RUB</h5>
+										<div class="copy">
+											<p>Логин в МТ5: 1100074423</p>
+											<a><img src="images/lk/copy.svg" alt="" /></a>
+										</div>
+									</div>
+								</div>
+								<div class="action__check-link">
+									<a href="balanse.html">Пополнить</a>
+									<a href="platform.html">Торговать</a>
+									<a href="#"><img src="images/lk/dot.png" alt="" /></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="blo2" style="display: none" class="swiper-slide">
+						<div class="actions__check story__trade">
+							<img src="images/lk/emp.png" alt="" />
+							<h3>У вас нет демо-счетов</h3>
+							<a class="check__open-link" href="opencheck.html"
+								>Открыть демо-счет</a
+							>
+						</div>
+					</div>
+
+					<div id="blo3" class="check__block1">
+						<a href="" class="opencheck__link">Добавить счет</a>
+						<div class="check__check">
+							<div class="btn__check1">
+								<button id="btn-rub1" class="btn-ch">Все</button>
+								<button id="btn-rub2" class="btn-ch">RUB</button>
+								<button id="btn-rub3" class="btn-ch">CNY</button>
+								<button id="btn-rub4" class="btn-ch">EUR</button>
+								<button id="btn-rub5" class="btn-ch">USD</button>
+							</div>
+							<div
+								id="b1"
+								style="display: none"
+								class="actions__check-card story__all-info"
+							>
+								<div class="action__check-item">
+									<img src="images/lk/rub.png" alt="" />
+									<div class="check__check-info">
+										<h5 id="check__num">40817810190009795582</h5>
+										<h5>ФИЛИАЛ № 3652 БАНКА ВТБ (ПАО)</h5>
+									</div>
+								</div>
+							</div>
+							<div
+								id="b2"
+								style="display: none"
+								class="actions__check-card story__all-info"
+							>
+								<div class="action__check-item">
+									<img src="images/lk/rub.png" alt="" />
+									<div class="check__check-info">
+										<h5 id="check__num1">40817810190009795582</h5>
+										<h5>ФИЛИАЛ № 3652 БАНКА ВТБ (ПАО)</h5>
+									</div>
+								</div>
+							</div>
+							<div id="b3" style="display: none" class="swiper-slide">
+								<div class="empty__text">
+									<img src="images/lk/emp.png" alt="" />
+									<h3 class="empty">У вас нет сохраненных банковских счетов</h3>
+								</div>
+							</div>
+							<div id="b4" style="display: none" class="swiper-slide">
+								<div class="empty__text">
+									<img src="images/lk/emp.png" alt="" />
+									<h3 class="empty">У вас нет сохраненных банковских счетов</h3>
+								</div>
+							</div>
+							<div id="b5" style="display: none" class="swiper-slide">
+								<div class="empty__text">
+									<img src="images/lk/emp.png" alt="" />
+									<h3 class="empty">У вас нет сохраненных банковских счетов</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<script>
+			const btn1 = document.getElementById('btn1')
+			const btn2 = document.getElementById('btn2')
+			const btn3 = document.getElementById('btn3')
+			const blo1 = document.getElementById('blo1')
+			const blo2 = document.getElementById('blo2')
+			const blo3 = document.getElementById('blo3')
+
+			btn1.addEventListener('click', () => {
+				blo1.style.display = 'flex' // Показываем блок 1
+				blo2.style.display = 'none' // Скрываем блок 2
+				blo3.style.display = 'none' // Скрываем блок 2
+			})
+
+			btn2.addEventListener('click', () => {
+				blo2.style.display = 'flex' // Показываем блок 2
+				blo1.style.display = 'none' // Скрываем блок 1
+				blo3.style.display = 'none' // Скрываем блок 1
+			})
+			btn3.addEventListener('click', () => {
+				blo3.style.display = 'block' // Показываем блок 3
+				blo1.style.display = 'none' // Скрываем блок 1
+				blo2.style.display = 'none' // Скрываем блок 1
+			})
+			const but1 = document.getElementById('btn-rub1')
+			const but2 = document.getElementById('btn-rub2')
+			const but3 = document.getElementById('btn-rub3')
+			const but4 = document.getElementById('btn-rub4')
+			const but5 = document.getElementById('btn-rub5')
+			const b1 = document.getElementById('b1')
+			const b2 = document.getElementById('b2')
+			const b3 = document.getElementById('b3')
+			const b4 = document.getElementById('b4')
+			const b5 = document.getElementById('b5')
+
+			but1.addEventListener('click', () => {
+				b1.style.display = 'flex' // Показываем блок 1
+				b2.style.display = 'none' // Скрываем блок 2
+				b3.style.display = 'none' // Скрываем блок 2
+				b4.style.display = 'none' // Скрываем блок 2
+				b5.style.display = 'none' // Скрываем блок 2
+			})
+
+			but2.addEventListener('click', () => {
+				b2.style.display = 'flex' // Показываем блок 2
+				b1.style.display = 'none' // Скрываем блок 1
+				b3.style.display = 'none' // Скрываем блок 1
+				b4.style.display = 'none' // Скрываем блок 1
+				b5.style.display = 'none' // Скрываем блок 1
+			})
+			but3.addEventListener('click', () => {
+				b3.style.display = 'block' // Показываем блок 3
+				b1.style.display = 'none' // Скрываем блок 1
+				b2.style.display = 'none' // Скрываем блок 1
+				b4.style.display = 'none' // Скрываем блок 1
+				b5.style.display = 'none' // Скрываем блок 1
+			})
+			but4.addEventListener('click', () => {
+				b4.style.display = 'block' // Показываем блок 4
+				b1.style.display = 'none' // Скрываем блок 1
+				b2.style.display = 'none' // Скрываем блок 1
+				b3.style.display = 'none' // Скрываем блок 1
+				b5.style.display = 'none' // Скрываем блок 1
+			})
+			but5.addEventListener('click', () => {
+				b5.style.display = 'block' // Показываем блок 5
+				b1.style.display = 'none' // Скрываем блок 1
+				b2.style.display = 'none' // Скрываем блок 1
+				b3.style.display = 'none' // Скрываем блок 1
+				b4.style.display = 'none' // Скрываем блок 1
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,434 @@
+.opencheck__choose {
+	border-radius: 10px;
+	max-width: 722px;
+	background: #fff;
+	padding: 21px 33px;
+}
+.opencheck__text,
+.money__text {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 136%;
+	color: #000;
+	border-left: 1px solid #000;
+	background: #edeef0;
+	padding: 10px 10px 10px 6px;
+	margin-bottom: 29px;
+}
+.money__text {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: start;
+	gap: 2px;
+	margin-top: 28px;
+}
+.money__text p a {
+	text-decoration: underline;
+	-webkit-text-decoration-skip-ink: none;
+	text-decoration-skip-ink: none;
+	color: #000;
+	&:hover {
+		opacity: 0.8;
+	}
+}
+.money__text p span {
+	font-weight: 700;
+	font-size: clamp(14px, 4vw, 18px);
+	line-height: 178%;
+	color: #000;
+}
+
+.check__text {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 229%;
+	color: #000;
+	margin-top: 27px;
+	max-width: 719px;
+}
+.check__text a {
+	text-decoration: underline;
+	-webkit-text-decoration-skip-ink: none;
+	text-decoration-skip-ink: none;
+	color: #5786f3;
+	&:hover {
+		opacity: 0.7;
+	}
+}
+
+.opencheck__choose-inner details {
+	padding: 12px;
+	border-radius: 10px;
+	max-width: 656px;
+	background: #e3f0ff;
+	position: relative;
+}
+
+.faq__1 {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	gap: 3px;
+}
+.faq__1 h3 {
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 188%;
+	color: #565d6d;
+}
+
+.faq__text {
+	margin-top: 17px;
+	padding-left: 46px;
+}
+.faq__text p {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 136%;
+	color: #000;
+}
+.opencheck__link {
+	font-weight: 400;
+	font-size: clamp(12px, 1vw, 16px);
+	line-height: 200%;
+	color: #fff;
+	background: #f00;
+	border-radius: 10px;
+	padding-block: 5px;
+	margin-block: 15px 24px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	width: clamp(167px, 14vw, 179px);
+}
+#money__link {
+	width: clamp(130px, 14vw, 148px);
+}
+#check__link {
+	width: clamp(200px, 14vw, 243px);
+}
+
+.opencheck__link:hover,
+.opencheck__link:active {
+	background-color: #000;
+}
+
+.faq::after {
+	content: '';
+	background: url(./../images/lk/down1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	float: right;
+	width: 37px;
+	height: 42px;
+	position: absolute;
+	top: 5px;
+	right: 10px;
+}
+
+details[open] .faq::after {
+	content: '';
+	background-image: url(./../images/lk/up1.png);
+}
+details[open] .faq__text {
+	-webkit-transition: -webkit-transform 0.9s ease;
+	transition: -webkit-transform 0.9s ease;
+	-o-transition: transform 0.9s ease;
+	transition: transform 0.9s ease;
+	transition: transform 0.9s ease, -webkit-transform 0.9s ease;
+}
+summary {
+	list-style: none;
+}
+
+.opencheck__input input {
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 188%;
+	color: #000;
+	border-radius: 10px;
+	background: #edeef0;
+	margin-bottom: 15px;
+	margin-top: 16px;
+	width: 100%;
+}
+.opencheck__input input::-webkit-input-placeholder {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 188%;
+	color: #565d6d;
+	padding: 15px;
+	margin-left: 15px;
+}
+.opencheck__input input::-moz-placeholder {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 188%;
+	color: #565d6d;
+	padding: 15px;
+	margin-left: 15px;
+}
+.opencheck__input input:-ms-input-placeholder {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 188%;
+	color: #565d6d;
+	padding: 15px;
+	margin-left: 15px;
+}
+.opencheck__input input::-ms-input-placeholder {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 188%;
+	color: #565d6d;
+	padding: 15px;
+	margin-left: 15px;
+}
+.opencheck__input input::placeholder {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 188%;
+	color: #565d6d;
+	padding: 15px;
+	margin-left: 15px;
+}
+.money__input input,
+.cp__form,
+.ch__form,
+.money__input-top form {
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 213%;
+	color: #76747f;
+	border-radius: 10px;
+	background: #edeef0;
+	padding: 7px 7px 7px 12px;
+}
+.money__input input::-webkit-input-placeholder {
+	color: #76747f;
+}
+.money__input input::-moz-placeholder {
+	color: #76747f;
+}
+.money__input input:-ms-input-placeholder {
+	color: #76747f;
+}
+.money__input input::-ms-input-placeholder {
+	color: #76747f;
+}
+.money__input input::placeholder {
+	color: #76747f;
+}
+
+.money__input2 {
+	margin-top: clamp(15px, 4vw, 27px);
+	width: 100%;
+}
+.money__input-top {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	gap: 26px;
+}
+.money__input-top form,
+.money__input1 {
+	width: 315px;
+}
+.money__input h2 {
+	font-weight: 700;
+	font-size: clamp(16px, 4vw, 20px);
+	line-height: 160%;
+	color: #000;
+	margin-bottom: 16px;
+}
+.money__input h5 {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 229%;
+	color: #bebec2;
+}
+.ch__form {
+	margin-bottom: 22px;
+	width: 100%;
+}
+
+.top__money {
+	margin-top: clamp(25px, 4vw, 43px);
+}
+.opencheck__input-money {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	gap: 23px;
+}
+.opencheck__input-money form {
+	border-radius: 10px;
+	width: 315px;
+	background: #edeef0;
+	padding: 0px 0px 7px 12px;
+}
+.opencheck__input-money label {
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 100%;
+	color: #565d6d;
+}
+.opencheck__input-money select {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 200%;
+	color: #000;
+	width: 298px;
+}
+.opencheck__input-valuta form select,
+.opencheck__input-check form select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-image: url(./../images/lk/down.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+.money__input select,
+.cz__form select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-image: url(./../images/lk/down.png);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.money__input form.cz__form select {
+	width: 300px;
+}
+.money__input form.ch__form select,
+.money__input form.cp__form select {
+	width: 100%;
+}
+.opencheck__input-valuta p,
+.opencheck__input-check p {
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 280%;
+	color: #000;
+	margin-top: 2px;
+}
+
+.opencheck__input-money select option::after {
+	padding-bottom: 20px;
+	display: block;
+	content: '/25BE';
+	height: 20px;
+	margin-bottom: 20px;
+}
+.opencheck__input-money select option:hover {
+	background: #fff;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 200%;
+	color: #000;
+	border-radius: 10px;
+}
+.check-cont {
+	position: relative;
+}
+
+@media (max-width: 880px) {
+	.opencheck__choose p {
+		font-size: 12px;
+		line-height: normal;
+	}
+	.opencheck__choose {
+		padding: 15px 24px;
+	}
+	.money__text p span {
+		line-height: normal;
+	}
+}
+@media (max-width: 520px) {
+	.opencheck__input-money form,
+	.money__input-top form,
+	.money__input1 {
+		width: 210px;
+	}
+	.opencheck__input-money select {
+		width: 195px;
+	}
+	.opencheck__choose {
+		padding: 15px 10px;
+	}
+	.opencheck__input input {
+		font-size: 16px;
+	}
+	.money__input select,
+	.money__input input {
+		font-size: 12px;
+	}
+	.money__input h5 {
+		font-size: 10px;
+	}
+	.money__input form.cz__form select {
+		width: 195px;
+	}
+	.check__text {
+		font-size: 12px;
+		line-height: 150%;
+	}
+	.opencheck__input-valuta p,
+	.opencheck__input-check p {
+		font-size: 10px;
+		line-height: normal;
+	}
+}
+@media (max-width: 450px) {
+	.faq__1 img {
+		width: 17px;
+		height: 20px;
+	}
+	.faq__1 {
+		gap: 0;
+	}
+	.faq__text {
+		margin-top: 17px;
+		padding-left: 15px;
+	}
+
+	.faq__1::after {
+		width: 25px;
+		height: 25px;
+	}
+	.faq__1 h3 {
+		font-size: 12px;
+	}
+	.faq::after {
+		width: 15px;
+		height: 20px;
+		top: 8px;
+	}
+	.opencheck__choose-inner details {
+		padding: 8px;
+	}
+	.money__text img {
+		width: 20px;
+		height: 20px;
+	}
+}

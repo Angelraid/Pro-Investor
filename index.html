@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Pro Investor</title>
+		<link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__top">
+					<a href="#"
+						><img src="images/logo.svg" alt="Лого" class="header__logo"
+					/></a>
+					<div class="header__link">
+						<a
+							onclick="window['modal-login'].showModal()"
+							class="header__link-login"
+							>Вход</a
+						>
+						<a
+							onclick="window['modal-signup'].showModal()"
+							class="header__link-signup"
+							>Регистрация</a
+						>
+					</div>
+				</div>
+				<div class="header__body">
+					<div class="container">
+						<h1>
+							Инвестиции в счета<br />
+							профессиональных управляющих
+						</h1>
+						<p>
+							Уровень доходности <span>5% в месяц</span> привлекает инвесторов,
+							стремящихся к приумножению средств.
+						</p>
+						<a href="#" class="header__body-link all__link">Инвестировать</a>
+					</div>
+				</div>
+			</div>
+
+			<!--Модальное окно-->
+
+			<dialog id="modal-login">
+				<form method="dialog">
+					<div id="modal-log">
+						<div class="container-b">
+							<div class="modal__top">
+								<a href="tel:+88001006202">8 800 100-62-02</a>
+								<a href="tel:+74992157979">+7 499 215-79-79</a>
+							</div>
+							<div class="modal__body">
+								<div class="container-sm">
+									<h4>Свяжитесь со мной</h4>
+									<div class="modal__body-input">
+										<h2>Вход в Альфа-Форекс</h2>
+										<input
+											id="phone"
+											type="text"
+											name="phone"
+											placeholder="+7(000)000-00-00"
+											maxlength="12"
+										/>
+										<img src="images/flag.png" alt="Флаг" />
+										<a
+											onclick="window['modal-password'].showModal()"
+											class="modal__link"
+											href="#"
+											>Продолжить</a
+										>
+										<a onclick="window['modal-login'].close()">Не могу войти</a>
+									</div>
+									<a
+										class="modal__body-reg"
+										onclick="window['modal-signup'].showModal()"
+										>Регистрация</a
+									>
+									<p>
+										© Альфа-Форекс 2025<br />
+										ООО «Альфа-Форекс» имеет лицензию профессионального
+										участника рынка ценных бумаг № 045-14070-020000
+										от 20.12.2018 на осуществление деятельности форекс-дилера,
+										выданную Центральным банком Российской Федерации (Банк
+										России)<br />
+										Внесено <a href="#"
+											>реестр лицензированных форекс-дилеров</a
+										>
+										 в разделе профессиональных участников рынка ценных бумаг
+										на официальном сайте Центрального банка Российской
+										Федерации<br />
+										Является членом СРО АФД
+										<a href="#">(Ассоциация форекс-дилеров)</a>, свидетельство
+										от 24.12.2018, номер форекс-дилера в реестре членов СРО —
+										009, Протокол № 30 от 24.12.2018<br />
+										Нажимая кнопку «Продолжить», вы соглашаетесь
+										<a href="#">с условиями использования личного кабинета</a
+										><br />
+										Уведомление о рисках: для начала работы с ООО «Альфа-Форекс»
+										вам необходимо ознакомиться с рисками, связанными
+										с заключением, исполнением и прекращением обязательств
+										по рамочному договору и отдельным договорам. Тем самым
+										компания будет убеждена, что вы осознаете все риски,
+										с которыми сопряжена торговля с использованием кредитного
+										плеча
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</dialog>
+			<dialog id="modal-signup">
+				<form method="dialog">
+					<div id="modal-sig">
+						<div class="container-b">
+							<div class="modal__top">
+								<a href="tel:+88001006202">8 800 100-62-02</a>
+								<a href="tel:+74992157979">+7 499 215-79-79</a>
+							</div>
+							<div class="modal__body">
+								<div class="container-sm">
+									<h4>Свяжитесь со мной</h4>
+									<div id="registration" class="modal__body-input">
+										<h2>Регистрация</h2>
+										<input type="name" placeholder="Фамилия" />
+										<input type="text" placeholder="Имя" />
+										<input type="text" placeholder="Отчество" />
+										<input
+											maxlength="12"
+											type="text"
+											placeholder="Номер телефона"
+										/>
+										<input id="oemail" type="text" placeholder="E-mail" />
+										<a class="modal__link" href="home.html">Регистрация</a>
+									</div>
+									<p>
+										© Альфа-Форекс 2025<br />
+										ООО «Альфа-Форекс» имеет лицензию профессионального
+										участника рынка ценных бумаг № 045-14070-020000
+										от 20.12.2018 на осуществление деятельности форекс-дилера,
+										выданную Центральным банком Российской Федерации (Банк
+										России)<br />
+										Внесено <a href="#"
+											>реестр лицензированных форекс-дилеров</a
+										>
+										 в разделе профессиональных участников рынка ценных бумаг
+										на официальном сайте Центрального банка Российской
+										Федерации<br />
+										Является членом СРО АФД
+										<a href="#">(Ассоциация форекс-дилеров)</a>, свидетельство
+										от 24.12.2018, номер форекс-дилера в реестре членов СРО —
+										009, Протокол № 30 от 24.12.2018<br />
+										Нажимая кнопку «Продолжить», вы соглашаетесь
+										<a href="#">с условиями использования личного кабинета</a
+										><br />
+										Уведомление о рисках: для начала работы с ООО «Альфа-Форекс»
+										вам необходимо ознакомиться с рисками, связанными
+										с заключением, исполнением и прекращением обязательств
+										по рамочному договору и отдельным договорам. Тем самым
+										компания будет убеждена, что вы осознаете все риски,
+										с которыми сопряжена торговля с использованием кредитного
+										плеча
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</dialog>
+			<dialog id="modal-password">
+				<form method="dialog">
+					<div id="modal-pas">
+						<div class="container-b">
+							<div class="modal__top">
+								<a href="tel:+88001006202">8 800 100-62-02</a>
+								<a href="tel:+74992157979">+7 499 215-79-79</a>
+							</div>
+							<div class="modal__body">
+								<div class="container-sm">
+									<h4>Свяжитесь со мной</h4>
+									<div id="entr" class="modal__body-input">
+										<h2>Вход в Альфа-Форекс</h2>
+										<div class="password-wrapper">
+											<input
+												class="password-input"
+												type="password"
+												placeholder="Введите пароль"
+											/>
+											<button
+												class="password-icon"
+												onclick="toggleInputType(event)"
+											></button>
+											<i class="bi bi-eye password-icon"></i>
+										</div>
+										<a class="modal__link" href="home.html">Войти</a>
+										<a onclick="window['modal-password'].close()"
+											>Не могу войти</a
+										>
+									</div>
+									<p>
+										© Альфа-Форекс 2025<br />
+										ООО «Альфа-Форекс» имеет лицензию профессионального
+										участника рынка ценных бумаг № 045-14070-020000
+										от 20.12.2018 на осуществление деятельности форекс-дилера,
+										выданную Центральным банком Российской Федерации (Банк
+										России)<br />
+										Внесено <a href="#"
+											>реестр лицензированных форекс-дилеров</a
+										>
+										 в разделе профессиональных участников рынка ценных бумаг
+										на официальном сайте Центрального банка Российской
+										Федерации<br />
+										Является членом СРО АФД
+										<a href="#">(Ассоциация форекс-дилеров)</a>, свидетельство
+										от 24.12.2018, номер форекс-дилера в реестре членов СРО —
+										009, Протокол № 30 от 24.12.2018<br />
+										Нажимая кнопку «Продолжить», вы соглашаетесь
+										<a href="#">с условиями использования личного кабинета</a
+										><br />
+										Уведомление о рисках: для начала работы с ООО «Альфа-Форекс»
+										вам необходимо ознакомиться с рисками, связанными
+										с заключением, исполнением и прекращением обязательств
+										по рамочному договору и отдельным договорам. Тем самым
+										компания будет убеждена, что вы осознаете все риски,
+										с которыми сопряжена торговля с использованием кредитного
+										плеча
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</dialog>
+		</header>
+		<main>
+			<section class="benefits">
+				<div class="container">
+					<h2>5 преимуществ инвестирования в ПАММ-счета</h2>
+					<div class="benefits__body">
+						<div class="benefits__content">
+							<div class="benefits__content-top">
+								<img src="images/ben1.svg" alt="Преимущество" />
+								<h4>Сверхдоходность</h4>
+							</div>
+							<p>
+								Трёхзначная потенциальная доходность при инвестициях в торговлю
+								опытных трейдеров
+							</p>
+						</div>
+						<div class="benefits__content">
+							<div class="benefits__content-top">
+								<img src="images/ben2.svg" alt="Преимущество" />
+								<h4>Гибкие сроки</h4>
+							</div>
+							<p>
+								Различные по срокам условия инвестирования средств от одного
+								месяца до года и больше
+							</p>
+						</div>
+						<div class="benefits__content">
+							<div class="benefits__content-top">
+								<img src="images/ben3.svg" alt="Преимущество" />
+								<h4>Быстрота</h4>
+							</div>
+							<p>
+								Экономьте время на обучении, изучении аналитики и
+								самостоятельной торговле
+							</p>
+						</div>
+						<div class="benefits__content">
+							<div class="benefits__content-top">
+								<img src="images/ben4.svg" alt="Преимущество" />
+								<h4>Прозрачность</h4>
+							</div>
+							<p>
+								Следите за графиком торговли управляющего и проведенными
+								операциями
+							</p>
+						</div>
+						<div class="benefits__content">
+							<div class="benefits__content-top">
+								<img src="images/ben5.svg" alt="Преимущество" />
+								<h4>Профессионализм</h4>
+							</div>
+							<p>
+								Трейдинг осуществляется под полным контролем профессиональных
+								управляющих
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="diagram">
+				<div class="container">
+					<div class="diagram1">
+						<img
+							src="images/diagram1.png"
+							alt="Диаграмма инвестор и управляющий"
+						/>
+					</div>
+					<div class="diagram2">
+						<img
+							src="images/diagram2.png"
+							alt="Диаграмма инвестор и управляющий"
+						/>
+					</div>
+					<div class="diagram3">
+						<img
+							src="images/diagram3.png"
+							alt="Диаграмма инвестор и управляющий"
+						/>
+					</div>
+				</div>
+			</section>
+			<section class="deposit">
+				<div class="container">
+					<div class="deposit__body">
+						<h3>
+							Вклады в инвестиционные <br />
+							ПАММ счета
+						</h3>
+						<div class="deposit__text">
+							<h4>Сервис ПАММ счетов –</h4>
+							<ul>
+								<li>
+									это система процентного распределения прибыли между
+									управляющим и инвестором
+								</li>
+								<li>
+									Другими словами, ПАММ – счет где, управляющий имеет
+									возможность использовать в торговле привлеченные средства
+									инвесторов.
+								</li>
+								<li>
+									Заключается оферта – это договор, в котором регламентируются
+									отношения между инвестором и управляющим. Прибыль получаемая в
+									результате торговой деятельности управляющего, распределяется
+									между инвесторами пропорционально вложенной сумме.
+								</li>
+							</ul>
+							<a href="#" class="deposit__link all__link">Инвестировать</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="security">
+				<div class="container">
+					<h3>Защита инвестиций</h3>
+					<p>
+						Дилер биржевого рынка выступает в роли
+						<b>независимого гаранта</b> выполнения обязательств как
+						управляющего, так и инвестора. Отсюда вытекают следующие
+						преимущества:
+					</p>
+					<div class="security__steps">
+						<div class="security__steps-item">
+							<h4>01</h4>
+							<p>Управляющий не может взять и уйти с деньгами инвесторов.</p>
+						</div>
+						<div class="security__steps-item">
+							<h4>02</h4>
+							<p>
+								Ваши средства и прибыль находятся на общем ПАММ-счёте, и только
+								вы можете распоряжаться ими, так как они не передаются
+								управляющему.
+							</p>
+						</div>
+						<div class="security__steps-item">
+							<h4>03</h4>
+							<p>
+								При консервативной торговле управляющий рискует только прибылью,
+								а не капиталом инвесторов.
+							</p>
+						</div>
+					</div>
+					<div class="security__text">
+						<p>
+							<span>Вывод прибыли. </span> ПАММ-сервис позволяет настроить
+							автоматический вывод прибыли по окончанию торгового интервала, что
+							обеспечит Вам постоянный поток прибыли и ее сохранение на своем
+							отдельном торговом счете.
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__content">
+					<a href="#"
+						><img src="images/footerLogo.svg" alt="Лого" class="footer__logo"
+					/></a>
+					<div class="header__link">
+						<a
+							onclick="window['modal-login'].showModal()"
+							class="header__link-login footer__link-login"
+							>Вход</a
+						>
+						<a
+							onclick="window['modal-signup'].showModal()"
+							class="header__link-signup"
+							>Регистрация</a
+						>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="https://unpkg.com/imask"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>
