@@ -231,7 +231,6 @@ body {
 .action__check-info h4 {
 	font-weight: 600;
 	font-size: 14px;
-	/* line-height: 229%; */
 	color: #565d6d;
 	background: #d6d8dd;
 	border-radius: 6px;
@@ -1382,4 +1381,5 @@ body {
 		max-width: 238px;
 	}
 }
+
 
